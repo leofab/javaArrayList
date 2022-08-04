@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class CodeTest {
   public static void main(String[] args){
@@ -13,6 +14,8 @@ public class CodeTest {
 
     // 3rd step - adding elements in specified position
     strList.add(2,"Hello");
+    strList.add(2,"2");
+    strList.add(2,"world");
 
     // print elements of ArrayList
     System.out.println(strList);
@@ -26,5 +29,21 @@ public class CodeTest {
     System.out.println(strList);
     strList.remove("changed 99");
     System.out.println(strList);
+
+    // 6th step - Iterating trough array
+    // using for loop
+    for (int i = 0 ; i < strList.size(); i++){
+      System.out.println(strList.get(i));
+    }
+
+    // using forEachLoop
+    for (String s : strList) System.out.println(s);
+
+    // using Iterator Interface
+    Iterator<String> iterator = strList.iterator();
+    while(iterator.hasNext()){
+      System.out.println(iterator.next());
+    }
+
   }
 }
