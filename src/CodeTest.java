@@ -16,5 +16,15 @@ public class CodeTest {
 
     // print elements of ArrayList
     System.out.println(strList);
+
+    // 4th step - change an element in ArrayList
+    strList.set(0,"changed 99");
+    System.out.println(strList);
+
+    // 5th step - remove element from ArrayList
+    strList.remove(1);
+    System.out.println(strList);
+    strList.remove("changed 99");
+    System.out.println(strList);
   }
 }
