@@ -49,12 +49,18 @@ public class CodeTest {
 
     ArrayList<Integer> intList = new ArrayList<Integer>();
 
+    int m = 14;
     Integer y = 15; // wrapper class
     Integer z = y.intValue();
 
     intList.add(y);
     intList.add(z);
+    intList.add(m); // boxing automatically converts int to Interger object
+
+    int x = intList.get(0); // Unboxing is a conversion from wrapped object to its primitive data
+
 
     System.out.println(intList);
+    System.out.println(x);
   }
 }
