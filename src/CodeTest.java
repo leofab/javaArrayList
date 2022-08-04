@@ -45,5 +45,16 @@ public class CodeTest {
       System.out.println(iterator.next());
     }
 
+    // Storing primitive data with Wrapper Class
+
+    ArrayList<Integer> intList = new ArrayList<Integer>();
+
+    Integer y = 15; // wrapper class
+    Integer z = y.intValue();
+
+    intList.add(y);
+    intList.add(z);
+
+    System.out.println(intList);
   }
 }
